@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Archimatika</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main-header">
+				<div class="inner-wrapper">
+					<header class="top-header ">
+						<a href="#" class="logo"><img src="img/logo.png" alt="archimatika"></a>
+						<a href="#" class="show-menu"><span>menu</span></a>
+					</header>
+					<div class="headerSlogan">
+						<h3>Придаем выразительность архитектурным объектам</h3>
+						<h1 >Создаем <br> новое качество <br>среды</h1>
+						<span class="dot"></span>
+					</div>
+					<div class="language">
+						<input type="radio" id="lang1">
+						<label class='activeLang' for="lang1">ru</label>
+						<br>
+						<input type="radio" id="lang2">
+						<label for="lang2">en</label>
+					</div>
+				</div>
+				<canvas id="myCanvas" width="1280" height="38">
+				</canvas>
+			</div>
+			<section class="buildingsSection">
+				<canvas id="linesCanvas" width="590" height="1440"></canvas>
+				<div class="buildComposition b1"><img src="img/build.jpg" alt="">
+					<div class="numberComposition n1">
+						<span class="aboveNumber line">построили</span>
+						<p class="number">1,5</p>
+						<span class="underNumber">млн м<sup>2</sup></span>
+					</div></div>
+					<div class="buildComposition b2"><img src="img/greatBuild.jpg" alt="">
+						<div class="numberComposition n2">
+							<span class="aboveNumber slashes">строим</span>
+							<p class="number">5</p>
+							<span class="underNumber">млн м<sup>2</sup></span>
+						</div></div>
+						<div class="buildComposition b3"><img src="img/egg.jpg" alt="">
+							<div class="numberComposition n3">
+								<span class="aboveNumber dots">проектируем</span>
+								<p class="number">3</p>
+								<span class="underNumber ">млн м<sup>2</sup></span>
+							</div></div>
+							<p class="newLook">
+								новый взгляд на вещи
+							</p>
+						</section>
+						<section class="descriptionSection inner-wrapper">
+							<div class="descriptionBlock">
+								<div class="descriptionBlock-item ">
+									<h5>Архитектура</h5>
+									<p class='desc1'>Больше, чем просто здания.
+										Это среда, которая может и
+										должно менять жизнь людей
+										в лучшую сторону.
+									</p>
+								</div>
+								<div class="descriptionBlock-item">
+									<h5>Архитектор</h5>
+									<p class='desc2'>Не просто возводит здание.<br>
+										Он проектирует образ жизни людей, которые будут жить в нем или
+										взаимодействовать с ним за счет качественной среды.
+									</p>
+								</div>
+								<div class="descriptionBlock-item">
+									<h5>Хороший архитектор</h5>
+									<p class='desc3'>Чувствует, понимает и любит город. Он хорошо знает психологию
+										горожан, поэтому проектирует здания с учетом их интересов.<br>
+										Он создает выразительные
+										объекты, знакомясь с которыми хочется стать их частью, хочется жить или работать в них.
+									</p>
+								</div>
+								<div class="descriptionBlock-item">
+									<h5>Качественная<br> среда</h5>
+									<p class='desc4'>Это не только продуманные
+										планировки и большие площади.
+										Это то, что формирует образ жизни и мышления жильцов и меняет их жизнь к лучшему.
+									</p>
+								</div>
+							</div>
+							<div class="logo2Block">
+								<a href="#" class="logo2">
+									<img src="img/logoBigBl.png" alt="">
+								</a>
+								<h3>Создатели выразительных объектов и качественной среды во всех аспектах —<br>функциональном, коммерческом и архитектурном.
+								</h3>
+								<span>
+									В этом нам помогают <br>
+									наши принципы:
+								</span>
+							</div>
+						</section>
+						<section class="ourPrinciplesSection">
+							<div class="principlesBlock">
+								<div class="principlesCol1 principlesCol">
+									<div class="principles-item pr1">
+										<h4>Делать обитателей счастливыми</h4>
+										<p>Здания возводятся для людей, поэтому мы никогда не ставим комфорт в угоду эстетики и оригинальности. Так создается уникальная среда комфортной жизни.</p>
+									</div>
+									<div class="principles-item pr2">
+										<h4>Делать города<br>
+										красивыми</h4>
+										<p>Никогда не портим неповторимый облик города, остаемся верны принципу «не навреди». Сохраняем выразительность объекта, не жертвуя окружающим пространством.</p>
+									</div>
+								</div>
+								<div class="principlesCol2 principlesCol">
+									<span class="happy">Happy</span>
+								<img src="img/city.jpg" alt=""></div>
+								<div class="principlesCol3 principlesCol">
+									<div class="principles-item pr3">
+										<h4>Делать коммерчески прибыльные проекты</h4>
+										<p>Мы соединяем архитектурную выразительность, коммерческую логику и рентабельность. Сегодня это незаменимые компоненты прибыльного проекта.</p>
+									</div></div></div>
+									<h3>	От такого подхода <br>
+									выигрывают все:</h3>
+									<div id="principlesSc-block" >
+									</div>
+									<a href="#" class="showMore">Смотреть все принципы</a>
+								</section>
+								<section class="startFromSection ">
+									<span>С чего начать?</span>
+									<p>Создадим ваш проект с нуля или оценим существующий, укажем на слабые места
+										и сильные стороны, расскажем, как повысить его финансовую привлекательность.
+										Расскажем о подводных камнях и поможем избежать их.
+									</p>
+									<a href="#" class="estimateBtn">оценить проект</a>
+								</section>
+								<footer class="mainFooter inner-wrapper">
+									<div class="footerCol1"><a href="#"><img src="img/aSm.png"></a>
+									<div class="tel">
+										<p>телефон</p>
+										<a href="tel:380 44 228 77 28
+											" class="phone">380 44 228 77 28
+										</a>
+									</div>
+									<div class=social>
+										<a href="#">facebook</a>
+										<a href="#">livejournal</a>
+									</div>
+									<span class="copyright">©2018 Archimatica</span>
+								</div>
+								<nav class="footerNav">
+									<ul class="navList1">
+										<li><a href="#">наш подход</a></li>
+										<li><a href="#">процесс работы</a></li>
+										<li><a href="#">проекты</a></li>
+										<li><a href="#">о компании</a></li>
+									</ul>
+									<ul class="navList2">
+										<li><a href="#">инжинерные работы</a></li>
+										<li><a href="#">наша экспертиза</a></li>
+										<li><a href="#">журнал</a></li>
+										<li><a href="#">контакты</a></li>
+									</ul>
+								</nav>
+								<div class="mailBlock">
+									<p>для сотрудничества</p>
+									<a href="mailto:offers@archimatika.com">offers@archimatika.com</a>
+									<p>для сми</p>
+									<a href="mailto:">vasilenko.yu@archimatika.com</a>
+								</div>
+								<a href="" class="vintageLogo">by <img src="img/vintageLogo.png" alt=""></a>
+							</footer>
+						</div>
+						<script src="js/scripts.min.js"></script>
+					</body>
+				</html>
